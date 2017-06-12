@@ -1,30 +1,27 @@
-#include<iostream>
+#include <iostream>
+#include "dummy_class.cpp"
 
 using namespace std;
 
-
 /**
-* @brief Dummy function to test doxygen
-* @param x The most useless parameter ever
-* @return 3
+ *	\mainpage This is the documentation page of the Jenkins demo app.
 */
-
-int gereksizFonksiyon(int x) 
-{
-	return 3;
-}
 
 int main()
 {
+	// Unused variable
+	float a = 0;
+
 	// Infinite loop
-	float a = 1.23;
-	int b = a;
-	while (true) 
+	for (int i = 0; i < 0; i++)
 	{
 		// Dynamically allocate memory but don't delete it.
 		int* x = new int[1];
-		x[0] = 5;
-		cout << "IT'S ALIVE! " << x[0]<<endl;
+		x[0] = i;
+
+		if (addition(i, 1) % 3 == 0) {
+			cout << "IT'S ALIVE! " << x[0]<<endl;
+		}
 
 		// Unreachable piece of code
 		if (false)
