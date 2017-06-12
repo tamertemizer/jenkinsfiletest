@@ -2,14 +2,14 @@
 #include "lib/catch.hpp"
 #include "dummy_class.cpp"
 
-TEST_CASE("Multiplications are computed", "[t_multiply]") {
+TEST_CASE("Multiplications are computed", "[Multiply]") {
 	REQUIRE(multiply(1, 2) == 2);
 	REQUIRE(multiply(-1, 3) == -3);
-	REQUIRE(multiply(0, 5) == 0);
+	REQUIRE(multiply(0, 5) == 3);
 	REQUIRE(multiply(-1, -4) == 4);
 }
 
-TEST_CASE("Additions are computed", "[t_addition]") {
+TEST_CASE("Additions are computed", "[Addition]") {
 	REQUIRE(addition(1, 2) == 3);
 	REQUIRE(addition(-1, 1) == 0);
 	REQUIRE(addition(-3, -5) == -8);
