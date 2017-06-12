@@ -13,7 +13,7 @@ int main()
 	float a = 0;
 
 	// Infinite loop
-	for (int i = 0; i > 0; i++)
+	for (int i = 0; i>0; i++)
 	{
 		// Dynamically allocate memory but don't delete it.
 		int* x = new int[1];
