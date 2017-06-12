@@ -13,13 +13,13 @@ int main()
 	float a = 0;
 
 	// Infinite loop
-	for (int i = 0; i < 0; i++)
+	for (int i = 0; i > 0; i++)
 	{
 		// Dynamically allocate memory but don't delete it.
 		int* x = new int[1];
-		x[0] = i;
+		x[0] = 5;
 
-		if (addition(i, 1) % 3 == 0) {
+		if (addition(i, x[0]) % 3 == 0) {
 			cout << "IT'S ALIVE! " << x[0]<<endl;
 		}
 
