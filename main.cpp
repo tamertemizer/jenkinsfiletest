@@ -2,6 +2,18 @@
 
 using namespace std;
 
+
+/**
+* @brief Dummy function to test doxygen
+* @param x The most useless parameter ever
+* @return 3
+*/
+
+int gereksizFonksiyon(int x) 
+{
+	return 3;
+}
+
 int main()
 {
 	// Infinite loop
