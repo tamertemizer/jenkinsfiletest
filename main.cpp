@@ -5,6 +5,8 @@ using namespace std;
 int main()
 {
 	// Infinite loop
+	float a = 1.23;
+	int b = a;
 	while (true) 
 	{
 		// Dynamically allocate memory but don't delete it.
